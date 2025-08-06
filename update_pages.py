@@ -24,10 +24,14 @@ def update_page(i):
     nav += '    </nav>'
 
     # Replace old nav
-    content = re.sub(r'<nav.*?</nav>', nav, content, flags=re.DOTALL)
+    new_content, count = re.subn(r'<nav.*?</nav>', nav, content, flags=re.DOTALL)
+
+    if count == 0:
+        # If no nav was found, add it before the body tag
+        new_content = content.replace('</body>', nav + '\n</body>')
 
     with open(filename, 'w') as f:
-        f.write(content)
+        f.write(new_content)
 
 for i in range(1, 61):
     update_page(i)
