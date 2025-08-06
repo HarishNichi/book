@@ -1,1 +1,107 @@
-/* Add styles here */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+ background-color: #e3f2fd; /* Very light blue background */
+ color: #263238; /* Dark grey-blue text color */
+ margin: 0;
+ padding: 20px; /* Add some padding around the content */
+ display: flex;
+ flex-direction: column; /* Arrange content in a column */
+ align-items: center; /* Center content horizontally */
+}
+
+header {
+ width: 100%;
+ max-width: 1000px;
+ text-align: center;
+}
+
+h1 {
+ color: #0d47a1; /* Even deeper blue for main headings */
+ margin-bottom: 30px;
+ font-size: 3em; /* Larger font size */
+ text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Subtle text shadow */
+}
+
+h2 {
+    color: #303f9f; /* Slightly lighter blue for subheadings */
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+h3 {
+    color: #5c6bc0; /* Even lighter blue for smaller headings */
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+
+main {
+ width: 100%;
+ max-width: 1000px; /* Maximum width for the main content area */
+ background-color: #ffffff; /* White background for the main content */
+ padding: 30px;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* More prominent shadow */
+ border-radius: 10px; /* Rounded corners */
+ margin-top: 20px;
+ margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+img {
+ max-width: 100%;
+ height: auto;
+ display: block; /* Remove extra space below image */
+ margin: 20px auto; /* Center images and add space */
+ border-radius: 8px;
+}
+
+#page-container {
+    /* Styles for individual story pages */
+}
+
+/* Navigation Styles */
+nav {
+    margin-top: 20px;
+ display: flex; /* Make the nav a flex container */
+ justify-content: space-around; /* Space out the links evenly */
+ align-items: center; /* Vertically align items */
+ width: 100%;
+ max-width: 1000px; /* Match main content width */
+ padding: 10px 20px; /* Add padding around nav content */
+ background-color: #bbdefb; /* Very light blue background for nav */
+ border-radius: 8px;
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+nav a {
+ color: #0d47a1; /* Deep blue for link text */
+ text-decoration: none;
+ border-radius: 5px;
+ transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+ background-color: #1565c0; /* Darker blue on hover */
+ color: white; /* White text on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+ margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+ nav {
+ flex-direction: column; /* Stack links vertically on small screens */
+ }
+}
