@@ -7,8 +7,8 @@ async def main():
         browser = await p.chromium.launch()
         page = await browser.new_page()
 
-        # Get the absolute path to the page_01.html file
-        file_path = pathlib.Path("page_01.html").resolve()
+        # Get the absolute path to the index.html file
+        file_path = pathlib.Path("index.html").resolve()
 
         # Navigate to the local file
         await page.goto(f"file://{file_path}")
@@ -17,7 +17,7 @@ async def main():
         await page.wait_for_timeout(1000)
 
         # Take a screenshot
-        await page.screenshot(path="jules-scratch/verification/verification_final.png")
+        await page.screenshot(path="jules-scratch/verification/verification_single_page.png")
 
         await browser.close()
 
