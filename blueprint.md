@@ -44,9 +44,9 @@ This project aims to expand the provided story plot for "Flames of Destiny - Ani
 *   He uses Arjun's teachings and his instincts to defeat the beast with a new technique (The Rising Sun Fist).
 *   The victory earns him recognition.
 
-## Expanded Act 1: The Orphan's Shadow
+## Expanded Act 1: Child of the Crimson Pendant
 
-Act 1, "The Orphan's Shadow," will be expanded from the initial 10-page outline to a total of 50 HTML pages.
+Act 1, "Child of the Crimson Pendant," will be expanded from the initial 10-page outline to a total of 50 HTML pages.
 
 This expansion will involve adding numerous new scenes, dialogues, action sequences, and moments of character reflection to build a rich and extensive narrative. The goal is to significantly flesh out the events and character development outlined in the initial 10 pages, providing a much deeper and more immersive experience for the reader.
 

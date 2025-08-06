@@ -1,13 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lora', serif;
     line-height: 1.6;
- background-color: #e3f2fd; /* Very light blue background */
- color: #263238; /* Dark grey-blue text color */
- margin: 0;
- padding: 20px; /* Add some padding around the content */
- display: flex;
- flex-direction: column; /* Arrange content in a column */
- align-items: center; /* Center content horizontally */
+    background-color: #e3f2fd; /* Very light blue background */
+    color: #263238; /* Dark grey-blue text color */
+    margin: 0;
+    padding: 20px; /* Add some padding around the content */
+    display: flex;
+    flex-direction: column; /* Arrange content in a column */
+    align-items: center; /* Center content horizontally */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+body.fade-in {
+    opacity: 1;
 }
 
 header {
@@ -17,19 +25,22 @@ header {
 }
 
 h1 {
- color: #0d47a1; /* Even deeper blue for main headings */
- margin-bottom: 30px;
- font-size: 3em; /* Larger font size */
- text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Subtle text shadow */
+    font-family: 'Roboto', sans-serif;
+    color: #0d47a1; /* Even deeper blue for main headings */
+    margin-bottom: 30px;
+    font-size: 3em; /* Larger font size */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Subtle text shadow */
 }
 
 h2 {
+    font-family: 'Roboto', sans-serif;
     color: #303f9f; /* Slightly lighter blue for subheadings */
     margin-bottom: 15px;
     font-size: 1.8em;
 }
 
 h3 {
+    font-family: 'Roboto', sans-serif;
     color: #5c6bc0; /* Even lighter blue for smaller headings */
     margin-bottom: 10px;
     font-size: 1.4em;
@@ -76,6 +87,12 @@ nav {
  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
 nav a {
  color: #0d47a1; /* Deep blue for link text */
  text-decoration: none;
@@ -86,6 +103,26 @@ nav a {
 nav a:hover {
  background-color: #1565c0; /* Darker blue on hover */
  color: white; /* White text on hover */
+}
+
+.button {
+    display: inline-block;
+    background-color: #1565c0;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0d47a1;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #555;
 }
 
 /* Responsive Design */
