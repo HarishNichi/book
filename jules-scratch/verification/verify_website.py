@@ -17,7 +17,7 @@ async def main():
         await page.wait_for_timeout(1000)
 
         # Take a screenshot
-        await page.screenshot(path="jules-scratch/verification/verification_single_page.png")
+        await page.screenshot(path="jules-scratch/verification/verification_toc.png")
 
         await browser.close()
 
