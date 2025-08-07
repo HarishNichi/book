@@ -1,13 +1,19 @@
 import os
 import re
 
+import re
+
 def clean_html_content(content, page_num):
+    # Remove DOCTYPE declaration
+    content = re.sub(r'<!DOCTYPE html>', '', content, flags=re.IGNORECASE).strip()
+
     # Extract body content
     body_match = re.search(r'<body>(.*?)</body>', content, re.DOTALL)
     if body_match:
         content = body_match.group(1)
 
-    # Remove unwanted tags
+    # Remove unwanted tags and their content
+    content = re.sub(r'<head.*?</head>', '', content, flags=re.DOTALL)
     content = re.sub(r'<nav.*?</nav>', '', content, flags=re.DOTALL)
     content = re.sub(r'<script.*?</script>', '', content, flags=re.DOTALL)
     content = re.sub(r'<header.*?</header>', '', content, flags=re.DOTALL)
