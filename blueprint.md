@@ -14,7 +14,6 @@ This project aims to expand the provided story plot for "Flames of Destiny - Ani
 ## Current Story Outline (Act 1: The Awakening)
 
 ### SCENE 1: The Orphan’s Struggle
-
 *   Introduces young Anirudh seeking entry into the academy.
 *   Highlights his determination and lack of background.
 *   Master Guruji challenges him to prove himself.
@@ -33,7 +32,7 @@ This project aims to expand the provided story plot for "Flames of Destiny - Ani
 *   Anirudh accepts Arjun's guidance.
 
 ### SCENE 4: The Love That Grows
-
+*   Montage of Anirudh's training with Arjun, focusing on advanced techniques.
 *   Montage of Anirudh's training with Arjun, focusing on advanced techniques.
 *   Anirudh's interactions with Meera increase as she treats his injuries.
 *   Their relationship deepens through shared moments and understanding.
