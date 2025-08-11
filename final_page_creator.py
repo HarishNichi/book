@@ -1,40 +1,36 @@
 import os
 import re
 
-import re
+def extract_content(filename):
+    """Extracts the main story content from a page's HTML."""
+    if not os.path.exists(filename):
+        return None
+    with open(filename, 'r') as page_file:
+        content = page_file.read()
+        # First, try to find a specific story content div
+        match = re.search(r'<div class="story-content">(.*?)</div>', content, re.DOTALL)
+        if match:
+            return match.group(1).strip()
 
-def clean_html_content(content, page_num):
-    # Remove DOCTYPE declaration
-    content = re.sub(r'<!DOCTYPE html>', '', content, flags=re.IGNORECASE).strip()
+        # Fallback to the page-content div
+        match = re.search(r'<div class="page-content">(.*?)</div>', content, re.DOTALL)
+        if match:
+            return match.group(1).strip()
 
-    # Extract body content
-    body_match = re.search(r'<body>(.*?)</body>', content, re.DOTALL)
-    if body_match:
-        content = body_match.group(1)
+        # Fallback to the whole body if specific divs aren't found
+        body_match = re.search(r'<body>(.*?)</body>', content, re.DOTALL)
+        if body_match:
+            page_content = body_match.group(1)
+            # Clean up common boilerplate tags
+            page_content = re.sub(r'<nav.*?</nav>', '', page_content, flags=re.DOTALL)
+            page_content = re.sub(r'<script.*?</script>', '', page_content, flags=re.DOTALL)
+            page_content = re.sub(r'<div class="pagination">.*?</div>', '', page_content, flags=re.DOTALL)
+            page_content = re.sub(r'<h1>.*?</h1>', '', page_content, flags=re.DOTALL)
+            return page_content.strip()
+    return None
 
-    # Remove unwanted tags and their content
-    content = re.sub(r'<head.*?</head>', '', content, flags=re.DOTALL)
-    content = re.sub(r'<nav.*?</nav>', '', content, flags=re.DOTALL)
-    content = re.sub(r'<script.*?</script>', '', content, flags=re.DOTALL)
-    content = re.sub(r'<header.*?</header>', '', content, flags=re.DOTALL)
-    content = re.sub(r'<footer.*?</footer.*>', '', content, flags=re.DOTALL)
-    content = re.sub(r'<body>', '', content, flags=re.DOTALL)
-    content = re.sub(r'</body>', '', content, flags=re.DOTALL)
-    content = re.sub(r'<html>', '', content, flags=re.DOTALL)
-    content = re.sub(r'</html>', '', content, flags=re.DOTALL)
-
-    # Make titles consistent
-    if not re.search(r'<h[1-2]>', content):
-        content = f'<h2>Page {page_num}</h2>\n{content}'
-    else:
-        content = re.sub(r'<h1>(.*?)</h1>', r'<h2>\1</h2>', content)
-
-    # Replace old title
-    content = content.replace('The Orphan\'s Shadow', 'Child of the Crimson Pendant')
-
-    return content
-
-def create_single_page():
+def create_final_page():
+    """Generates the final index.html from all story pages."""
     with open('index.html', 'w') as f:
         f.write("""<!DOCTYPE html>
 <html lang="en">
@@ -51,16 +47,30 @@ def create_single_page():
     <main>
 """)
 
-    for i in range(1, 61):
-        filename = f"page_{i:02d}.html"
-        if os.path.exists(filename):
-            with open(filename, 'r') as page_file:
-                content = page_file.read()
-                cleaned_content = clean_html_content(content, i)
-                with open('index.html', 'a') as f:
-                    f.write(f'<div id="page-{i}" class="page-content-container">')
-                    f.write(cleaned_content)
-                    f.write('</div>\n')
+    # Process pages 1 to 60
+    page_order = list(range(1, 61))
+
+    # Add bridge pages
+    page_order.extend(['60a', '60b', '60c'])
+
+    # Add pages 61 to 150
+    page_order.extend(list(range(61, 151)))
+
+    for page_num in page_order:
+        # Format page number for filename
+        if isinstance(page_num, int):
+            filename = f"page_{page_num:02d}.html"
+        else:
+            filename = f"page_{page_num}.html"
+
+        page_content = extract_content(filename)
+        if page_content:
+            with open('index.html', 'a') as f:
+                f.write(f'<div id="page-{page_num}" class="page-content-container">')
+                f.write(page_content)
+                f.write('</div>\n')
+        else:
+            print(f"Warning: Could not find or process content for {filename}")
 
     with open('index.html', 'a') as f:
         f.write("""
@@ -75,5 +85,6 @@ def create_single_page():
 </html>
 """)
 
-create_single_page()
-print("Single page created successfully!")
+if __name__ == "__main__":
+    create_final_page()
+    print("Final single page created successfully!")
