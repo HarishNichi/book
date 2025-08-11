@@ -11,12 +11,6 @@ body {
     display: flex;
     flex-direction: column; /* Arrange content in a column */
     align-items: center; /* Center content horizontally */
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-
-body.fade-in {
-    opacity: 1;
 }
 
 header {
