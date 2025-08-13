@@ -34,3 +34,26 @@ The enhancement will be performed iteratively, act by act, to ensure the changes
 ### 5. Final Review
 - **Objective:** Ensure the entire story is consistent and flows well.
 - **Action:** After all acts have been expanded, I will perform a final read-through of the entire `index.html` file to check for any inconsistencies or areas that need further refinement.
+
+## Plan for Acts 8-11
+
+The story will be expanded with four new acts, each containing 20 chapters. The new acts will follow the "Age of Monsters" theme introduced at the end of Act 7.
+
+### Act 8: The Awakening of the Titans
+- **Objective:** Introduce the new threat of the titans and establish the stakes for the new story arc.
+- **Chapters 1-5:** Anirudh, Meera, and Rohan investigate the tremors and discover the first awakened titan. They witness its destructive power and realize the scale of the new threat.
+- **Chapters 6-10:** They attempt to warn the New Council, but are met with political infighting and skepticism. They must gather their own allies.
+- **Chapters 11-15:** They seek out ancient lore about the titans, with the help of Master Vayu, learning about their origins and potential weaknesses.
+- **Chapters 16-20:** The first major confrontation with a titan, resulting in a devastating battle that forces them to retreat and realize they need a new source of power.
+
+### Act 9: The Quest for the Elemental Forges
+- **Objective:** Anirudh and his companions embark on a quest to find ancient forges to create weapons and armor capable of harming the titans.
+- **Chapters 1-20:** The quest will be broken down into sections, with each part focusing on finding one of the four elemental forges (Earth, Water, Air, Fire). Each forge will be guarded by unique creatures and present a different trial for Anirudh, testing his character and skills.
+
+### Act 10: The Rise of a New Enemy
+- **Objective:** Introduce a new human antagonist who takes advantage of the chaos.
+- **Chapters 1-20:** A charismatic leader, "The Warden," rises to power, promising protection from the titans but using dark magic to control them. He turns the populace against Anirudh and his allies. The act will focus on the escalating conflict with the Warden and his growing army.
+
+### Act 11: The Final War of Men and Monsters
+- **Objective:** The final confrontation against the Warden and the titans.
+- **Chapters 1-20:** Anirudh, now a master of his powers, rallies the free people for a final war. The act will feature epic battles, character-defining moments, and a final, climactic showdown with the Warden, who has merged with a titan. The story will conclude with a resolution to the conflict and an epilogue for the characters and the world.
