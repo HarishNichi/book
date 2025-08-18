@@ -57,3 +57,18 @@ The story will be expanded with four new acts, each containing 20 chapters. The 
 ### Act 11: The Final War of Men and Monsters
 - **Objective:** The final confrontation against the Warden and the titans.
 - **Chapters 1-20:** Anirudh, now a master of his powers, rallies the free people for a final war. The act will feature epic battles, character-defining moments, and a final, climactic showdown with the Warden, who has merged with a titan. The story will conclude with a resolution to the conflict and an epilogue for the characters and the world.
+
+## Plan for Acts 12 and Beyond (Long-Form Saga)
+
+The story will be expanded into a long-form epic, with a slow build-up to a major war around Act 50. A significant conflict will occur roughly every 5 acts. The immediate focus will be on building the new Celestial Realm and its characters.
+
+### Act 12: The Celestial Academy (30 Chapters)
+- **Objective:** Introduce the Celestial Realm, the academy, and the core conflict between the Swarna and Dark Soul clans.
+- **Chapters 1-10:** The heroes journey to the Celestial Realm. They discover a new world where their powers are insignificant. Anirudh enrolls in the Celestial Academy as a student, starting from the bottom.
+- **Chapters 11-20:** Anirudh navigates the complex social structure of the academy, meeting new friends and rivals from various clans, including the noble Swarna clan and the sinister Dark Soul clan. This section will feature low-stakes competitions and training, introducing the new power system.
+- **Chapters 21-30:** Anirudh finds a mentor within the Swarna clan and learns more about the history of the realm and the deep-seated conflict with the Dark Soul clan. The act will end with a minor confrontation that reveals the Dark Soul clan's malevolent intentions.
+
+### Future Acts (High-Level Outline)
+*   **Acts 13-15:** Will build upon the foundation of Act 12, developing rivalries, exploring the Celestial Realm, and culminating in the first "big fight" against a significant villain from the Dark Soul clan around the end of Act 15. This will involve quests for artifacts, gems, and scrolls.
+*   **Acts 16-49:** Will continue the journey, with Anirudh growing in power and wisdom, facing progressively stronger villains from the Dark Soul clan, and uncovering the full extent of their plans.
+*   **Act 50 and beyond:** The storyline will build towards the ultimate war against the leader of the Dark Soul clan and their void masters.
